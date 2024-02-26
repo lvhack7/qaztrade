@@ -3,6 +3,7 @@ import qth from '../assets/icons/QTH.cdr.svg'
 import kaz from '../assets/icons/no_image 1.svg'
 import trade from '../assets/icons/QazTrade 1 (1) 1.svg'
 import expo from '../assets/icons/no_image_1__1.png'
+import phone from '../assets/icons/phone.svg'
 import { Trans, useTranslation } from 'react-i18next'
 
 const Navbar = () => {
@@ -28,19 +29,19 @@ const Navbar = () => {
                         <img className='w-[60px] sm:w-[100px]' src={expo}/>
                     </div>
                     <div>
-                        <a href='#form' className='flex items-center space-x-2'>
-                            <div className='bg-brownDarker w-6 h-6 rounded-full'></div>
-                            <span>{t('navbar.contact-us')}</span>
+                        <a href='tel:+77711158028' className='flex items-center space-x-3'>
+                            <img src={phone} />
+                            <span>+7 (771) 115-80-28</span>
                         </a>
                     </div>
                 </div>
                 <div className='flex flex-wrap items-center justify-between gap-4 py-3 border-t border-[rgb(197,197,197)]'>
                     <div className='flex items-center justify-between space-x-6 lg:space-x-24'>
-                        <a href='#about' className='text-dark text-xs md:text-base'>{t('navbar.about')}</a>
-                        <a href='#direction' className='text-dark text-xs md:text-base'>{t('navbar.direction')}</a>
-                        <a href='#services' className='text-dark text-xs md:text-base'>{t('navbar.services')}</a>
-                        <a href='#advantages' className='text-dark text-xs md:text-base'>{t('navbar.advantages')}</a>
-                        <a href='#contacts' className='text-dark text-xs md:text-base'>{t('navbar.contacts')}</a>
+                        <a href='#about' className='text-dark text-xs md:text-base hover:text-button'>{t('navbar.about')}</a>
+                        <a href='#direction' className='text-dark text-xs md:text-base hover:text-button'>{t('navbar.direction')}</a>
+                        <a href='#services' className='text-dark text-xs md:text-base hover:text-button'>{t('navbar.services')}</a>
+                        <a href='#advantages' className='text-dark text-xs md:text-base hover:text-button'>{t('navbar.advantages')}</a>
+                        <a href='#contacts' className='text-dark text-xs md:text-base hover:text-button'>{t('navbar.contacts')}</a>
                     </div>
                     <div className='flex items-center justify-between space-x-10'>
                         <p className='text-dark text-xs md:text-base'>RU</p>

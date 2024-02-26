@@ -5,8 +5,7 @@ import location from '../assets/icons/location.svg'
 import { useTranslation } from 'react-i18next'
 import ymaps from 'ymaps'
 import insta from '../assets/icons/Instagram.svg'
-import telegram from '../assets/icons/Telegram.svg'
-import linkedin from '../assets/icons/LinkedIn.svg'
+import whatsapp from '../assets/icons/watsapp.svg'
 import facebook from '../assets/icons/Facebook.svg'
 
 const Contacts = () => {
@@ -37,14 +36,18 @@ const Contacts = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     <div className='flex flex-col space-y-10 lg:space-y-20'>
                         <div className='flex flex-col space-y-4'>
-                            <div className='flex items-center space-x-3'>
+                            <a href='tel:+77711158028' className='flex items-center space-x-3'>
                                 <img src={phone} className='ml-1.5' />
-                                <span className='text-dark text-lg'>+7 7172 76 88 05</span>
-                            </div>
-                            <div className='flex items-center space-x-3'>
+                                <span className='text-dark text-lg'>+7 (771) 115-80-28</span>
+                            </a>
+                            <a href='https://wa.me/77711158028' className='flex items-center space-x-3'>
+                                <img src={whatsapp} className='-ml-1' />
+                                <span className='text-dark text-lg'>+7 (771) 115-80-28</span>
+                            </a>
+                            <a href='mailto:qazaqtradehouse.uae@gmail.com' className='flex items-center space-x-3'>
                                 <img src={email} />
-                                <span className='text-dark text-lg'>info@tradehouse-kz.ae</span>
-                            </div>
+                                <span className='text-dark text-lg'>qazaqtradehouse.uae@gmail.com</span>
+                            </a>
                             <div className='flex items-start space-x-3'>
                                 <img src={location} />
                                 <span className='text-dark max-w-[350px] text-lg'>National Pavilion of Kazakhstan 132, Al Forsan Crescent street Opportunity District, Madinat Al Mataar, Dubai World Central, Dubai</span>
@@ -53,22 +56,14 @@ const Contacts = () => {
                         <div className='flex flex-col'>
                             <p className='text-button text-2xl'>{t('contact.our')}</p>
                             <div className='flex flex-col space-y-3 mt-6'>
-                                <div className='flex items-start space-x-2'>
+                                <a href='https://www.instagram.com/qazaqtradehouse.uae/?igsh=MWZ4aGJ4cWU2MnJyMA%3D%3D' className='flex items-start space-x-2'>
                                     <img src={insta} />
                                     <span className='text-dark max-w-[350px] text-lg'>@tradehouse-uae-kz</span>
-                                </div>
-                                <div className='flex items-start space-x-2'>
-                                    <img src={telegram} />
-                                    <span className='text-dark max-w-[350px] text-lg'>@tradehouse-uae-kz</span>
-                                </div>
-                                <div className='flex items-start space-x-2'>
-                                    <img src={linkedin} />
-                                    <span className='text-dark max-w-[350px] text-lg'>@tradehouse-uae-kz</span>
-                                </div>
-                                <div className='flex items-start space-x-2'>
+                                </a>
+                                <a href='https://www.facebook.com/profile.php?id=61556707739484&mibextid=dGKdO6' className='flex items-start space-x-2'>
                                     <img src={facebook} />
                                     <span className='text-dark max-w-[350px] text-lg'>@tradehouse-uae-kz</span>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

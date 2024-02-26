@@ -14,11 +14,11 @@ import img8 from '../assets/imgs/carousel/img8.png'
 const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 2
+      items: 1
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 1
     },
     tablet: {
       breakpoint: { max: 1024, min: 768 },
@@ -54,10 +54,10 @@ const About = () => {
 
     return (
         <div id='about' className='container mx-auto px-4 py-4'>
-            <div className='flex flex-col space-y-4 md:space-y-8'>
-                <h2 className='text-button font-medium text-4xl md:text-6xl'>{t('about.title')}</h2>
-                <div className='lg:hidden flex items-center justify-center p-4 bg-gray-100 rounded-[20px] w-full h-full'>
-                    <p className='text-dark text-lg leading-7'>
+            <h2 className='text-button font-medium text-4xl md:text-6xl'>{t('about.title')}</h2>
+            <div className='grid grid-cols-1 lg:grid-cols-2 mt-8 gap-6'>
+                <div className='flex items-center justify-center px-6 py-4 bg-gray-100 rounded-[20px] w-full h-full'>
+                    <p className='text-dark text-lg md:text-xl md:leading-10'>
                         <Trans
                             i18nKey={"about.text"}
                             components={{br: <br/>}}
@@ -70,18 +70,6 @@ const About = () => {
                     arrows
                     itemClass='relative h-[300px] md:h-[500px] rounded-[20px] md:p-3'
                 >
-                    {
-                        screenWidth > 1024 && (
-                            <div className='flex items-center justify-center p-8 bg-gray-100 rounded-[20px] w-full h-full'>
-                                <p className='text-dark text-xl xl:leading-10'>
-                                    <Trans
-                                        i18nKey={"about.text"}
-                                        components={{br: <br/>}}
-                                    />
-                                </p>
-                            </div>
-                        )
-                    }
                     {
                         images.map((img, id) => (
                             <img key={id} src={img} className='object-cover w-full h-full rounded-[20px]' alt=''/>

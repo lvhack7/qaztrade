@@ -61,8 +61,8 @@ const WhatYouGet = () => {
                                     />
                                 </p>
                                 <div className='flex justify-start mt-10'>
-                                    <a href='#form' className='flex items-center space-x-4'>
-                                        <span className='text-dark text-xl md:text-3xl'>{t('what.more')}</span>
+                                    <a href='#form' className='flex items-center space-x-4 group'>
+                                        <span className='text-dark text-xl md:text-3xl group-hover:text-button'>{t('what.more')}</span>
                                         <img src={arrow} />
                                     </a>
                                 </div>
@@ -94,8 +94,8 @@ const WhatYouGet = () => {
                                             {item.text}
                                         </p>
                                         <div className='justify-start items-end mt-10'>
-                                            <a href='#form' className='flex items-center space-x-4'>
-                                                <span className='text-dark text-xl md:text-3xl'>{t('what.more')}</span>
+                                            <a href='#form' className='flex items-center space-x-4 group'>
+                                                <span className='text-dark text-xl md:text-3xl group-hover:text-button'>{t('what.more')}</span>
                                                 <img src={arrow} />
                                             </a>
                                         </div>

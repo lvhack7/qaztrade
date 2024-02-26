@@ -12,7 +12,7 @@ const Hero = () => {
                     <p className='text-3xl md:text-5xl text-dark'>{t('hero.subtitle')}</p>
                 </div>
                 <div className='flex justify-start px-2 md:px-0'>
-                    <a href='#form' className='flex justify-center bg-button shadow-sm px-6 py-4 md:px-12 md:py-4 rounded-2xl text-white text-2xl w-full md:w-auto'>
+                    <a href='#form' className='flex justify-center bg-button shadow-sm px-6 py-4 md:px-12 md:py-4 rounded-2xl text-white text-2xl w-full md:w-auto hover:bg-[#006087]'>
                         {t('hero.request')}
                     </a>
                 </div>

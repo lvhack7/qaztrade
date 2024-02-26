@@ -10,7 +10,7 @@ const Footer = () => {
     const {t} = useTranslation()
 
     return (
-        <footer className='bg-button w-full rounded-t-[10px] py-10'>
+        <footer className='bg-button w-full rounded-t-[30px] py-10'>
             <div className='container mx-auto px-4'>
                 <div className='flex items-start md:items-center justify-between'>
                     <div className='flex flex-col md:flex-row md:items-center space-y-5 md:space-y-0 justify-between md:space-x-12'>
