@@ -16,7 +16,7 @@ const Stat = () => {
                     <div className='flex flex-col space-y-2'>
                         <p className='text-button text-4xl xl:text-5xl font-medium'>$ 
                             <span className='text-7xl xl:text-[5rem]'>
-                                <CountUp start={focus ? 200000 : null} end={328890} duration={2} redraw={true}>
+                                <CountUp start={focus ? 200000 : null} end={328890} duration={2} redraw={true} seperator=" ">
                                     {({ countUpRef }) => (
                                         <VisibilitySensor onChange={(isVisible) => {
                                             if (isVisible) { setFocus(true); }
@@ -34,7 +34,7 @@ const Stat = () => {
                     <div className='flex flex-col space-y-2'>
                         <p className='text-button text-4xl xl:text-5xl font-medium'>$ 
                             <span className='text-7xl xl:text-[5rem]'>
-                                <CountUp start={focus ? 200000 : null} end={210278.3} seperator=',' decimals={1} duration={2} redraw={true}>
+                                <CountUp start={focus ? 200000 : null} end={210278.3} seperator=' ' decimals={1} duration={2} redraw={true}>
                                     {({ countUpRef }) => (
                                         <VisibilitySensor onChange={(isVisible) => {
                                             if (isVisible) { setFocus(true); }
@@ -52,7 +52,7 @@ const Stat = () => {
                     <div className='flex flex-col space-y-2'>
                         <p className='text-button text-4xl xl:text-5xl font-medium'>$ 
                             <span className='text-7xl xl:text-[5rem]'>
-                                <CountUp start={focus ? 200000 : null} end={118611.7} duration={2} seperator=',' decimals={1} redraw={true}>
+                                <CountUp start={focus ? 200000 : null} end={118611.7} duration={2} seperator=' ' decimals={1} redraw={true}>
                                     {({ countUpRef }) => (
                                         <VisibilitySensor onChange={(isVisible) => {
                                             if (isVisible) { setFocus(true); }

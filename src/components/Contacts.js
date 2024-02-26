@@ -58,7 +58,7 @@ const Contacts = () => {
                             <div className='flex flex-col space-y-3 mt-6'>
                                 <a href='https://www.instagram.com/qazaqtradehouse.uae/?igsh=MWZ4aGJ4cWU2MnJyMA%3D%3D' className='flex items-start space-x-2'>
                                     <img src={insta} />
-                                    <span className='text-dark max-w-[350px] text-lg'>@tradehouse-uae-kz</span>
+                                    <span className='text-dark max-w-[350px] text-lg'>@qazaqtradehouse.uae</span>
                                 </a>
                                 <a href='https://www.facebook.com/profile.php?id=61556707739484&mibextid=dGKdO6' className='flex items-start space-x-2'>
                                     <img src={facebook} />
